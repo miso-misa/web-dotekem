@@ -1,0 +1,77 @@
+.hero1-max-width {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero1-column {
+  gap: 24px;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero1-content {
+  gap: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero1-actions {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+}
+.hero1-container1 {
+  flex: 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 35%;
+  justify-content: flex-start;
+}
+.hero1-image1 {
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 100%;
+  position: absolute;
+  flex-grow: 1;
+  object-fit: cover;
+}
+@media(max-width: 991px) {
+  .hero1-container {
+    flex-direction: column;
+  }
+  .hero1-container1 {
+    width: 100%;
+    padding-top: 56.25%;
+  }
+}
+@media(max-width: 767px) {
+  .hero1-heading1 {
+    text-align: center;
+  }
+  .hero1-content1 {
+    text-align: center;
+  }
+  .hero1-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero1-image1 {
+    width: 100%;
+  }
+}
+@media(max-width: 479px) {
+  .hero1-actions {
+    flex-direction: column;
+  }
+  .hero1-button {
+    width: 100%;
+  }
+  .hero1-button1 {
+    width: 100%;
+  }
+}
