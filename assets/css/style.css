@@ -95,6 +95,7 @@ html,body{
     color: var(--dl-color-gray-900);
     align-self: flex-start;
     background-color: #4e0275;
+    margin: 10%;
   }
   .home-footer {
     width: 100%;
