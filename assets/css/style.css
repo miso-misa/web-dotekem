@@ -115,12 +115,12 @@ html,body{
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
-    background-color: #fff;
+    background-color: #000000;
     border: none;
 }
 
 nav.navbar.bootsnav {
-    background-color: #fff;
+    background-color: #000000;
     border-bottom: transparent;
     box-shadow: 0 3px 15px rgba(0,0,0,.2);
 }
@@ -128,7 +128,7 @@ nav.navbar.bootsnav {
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #2b1e36;
+    color: #b09bc2;
     font-size: 20px;
     font-weight: 600;
     padding: 33px 0px 57px;
