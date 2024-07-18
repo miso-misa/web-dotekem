@@ -104,7 +104,7 @@ html,body{
     padding-top: 120px;
     flex-direction: column;
     padding-bottom: var(--dl-space-space-fiveunits);
-    background-color: var(--dl-color-gray-900);}
+    background-color: #000000;}
 /*=============Style css=========*/
 
 /*-------------------------------------
@@ -440,6 +440,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #2b1e36;}
     100%  {bottom:7px;}
 }
 
+.reviews {
+    flex: 0 0 auto;
+    width: 1000px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0px;
+    flex-direction: column;
+    padding-bottom: 0px;
+    background-image: url(/templates/images/shiatsu-head.jpg);
+}
 
 :root {
     --dl-color-gray-500: #595959;
