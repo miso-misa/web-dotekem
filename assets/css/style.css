@@ -200,10 +200,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #2b1e36;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(templates/images/shiatsu-head.jpg)no-repeat;
     background-size:cover;
     background-position: center;
-    height:890px;
+    height:700px;
 }
 .welcome-hero:before{
     position:absolute;
