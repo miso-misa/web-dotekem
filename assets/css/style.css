@@ -298,6 +298,21 @@ nav.navbar.bootsnav .navbar-toggle i {
 /*-------------------------------------
         4.  Shiatsu
 --------------------------------------*/
+
+.home-notes {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+}
+.home-first {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .about {
   padding: 50px 0 100px;
 }
