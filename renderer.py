@@ -8,5 +8,5 @@ index_template = env.get_template('index.html')
 output_from_parsed_template = index_template.render()
 
 # write the parsed template
-with open("renders/index.html", "w") as chap_page:
+with open("index.html", "w") as chap_page:
     chap_page.write(output_from_parsed_template)
