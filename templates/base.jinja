@@ -83,19 +83,13 @@
 
 
     <div id="content">
-        
-<img src="templates/images/shiatsu-head.jpg" alt="a person massaging someone's feet" width="" height="">
-
-<h1>
-    Shiatsu
-</h1>
-<p></p>
-
+        {% block content %}
+        {% endblock %}
     </div>
 </body>
 
 <div id="footer">
-    
+    {% block footer %}
     <footer class="home-footer">
         <span>DOTEKEM.cz</span>
         <br />
@@ -106,7 +100,7 @@
         <span>IČ: 08268908</span>
         <br />
     </footer>
-    
+    {% endblock %}
 </div>
 
 </html>

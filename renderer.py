@@ -1,12 +1,15 @@
 from jinja2 import Template, Environment, FileSystemLoader
+import os
 
 # load templates folder to environment (security measure)
-env = Environment(loader=FileSystemLoader('jinja_templates'))
+jinja_template_folder = "templates"
+env = Environment(loader=FileSystemLoader(jinja_template_folder))
 
 # load the `index.jinja` template
-index_template = env.get_template('index.html')
-output_from_parsed_template = index_template.render()
-
-# write the parsed template
-with open("index.html", "w") as chap_page:
-    chap_page.write(output_from_parsed_template)
+for f in os.listdir(jinja_template_folder):
+    if f.endswith(".jinja"):
+        template = env.get_template(f)
+        output_from_parsed_template = template.render()
+        # write the parsed template
+        with open(f.replace(".jinja", ".html"), "w") as chap_page:
+            chap_page.write(output_from_parsed_template)
