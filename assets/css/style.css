@@ -31,7 +31,7 @@ font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Source sans pro", sans-serif;
   font-size: 16px;
   color: #676a81;
   background: #fff;
@@ -59,7 +59,7 @@ h6 {
   margin: 0;
   color: #43485c;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Source sans pro", sans-serif;
   text-transform: capitalize;
 }
 p {
@@ -67,7 +67,7 @@ p {
   line-height: 1.8;
   color: #43485c;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Source sans pro", sans-serif;
 }
 img {
   border: none;
@@ -238,7 +238,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url(../templates/images/shiatsu-head.jpg) no-repeat;
+  background: url(public/my/shiatsu-head.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 700px;
