@@ -489,7 +489,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   padding-bottom: var(--dl-space-space-oneandhalfunits);
 }
 .home-header1 {
-  line-height: 60px;
+  line-height: 80px;
 }
 .home-list {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -781,15 +781,6 @@ nav.navbar.bootsnav .navbar-toggle i {
   color: var(--dl-color-gray-900);
   align-self: flex-start;
   background-color: #4e0275;
-}
-.home-footer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding-top: 120px;
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-fiveunits);
-  background-color: var(--dl-color-gray-900);
 }
 .home-content5 {
   gap: var(--dl-space-space-threeunits);
