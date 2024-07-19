@@ -632,7 +632,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   padding-bottom: 120px;
-  background-color: #AA82FF;
+  background-color: #ffffff;
 }
 .home-container2 {
   flex: 0 0 auto;
@@ -735,7 +735,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   padding-bottom: 120px;
-  background-color: #AA82FF;
+  background-color: #9183ad;
 }
 .home-content3 {
   gap: var(--dl-space-space-fiveunits);
