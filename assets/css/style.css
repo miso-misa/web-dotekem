@@ -128,21 +128,10 @@ body {
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
   background-color: #000000;
+}
 
-  .flex-parent-element {
-    display: flex;
-    width: 50%;
-  }
-  
-  .flex-child-element {
-    flex: 1;
-    border: 2px solid blueviolet;
-    margin: 10px;
-  }
-  
-  .flex-child-element:first-child {
-    margin-right: 20px;
-  }
+.inline-block-child {
+  display: inline-block;
 }
 /*=============Style css=========*/
 
