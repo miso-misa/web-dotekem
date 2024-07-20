@@ -1,12 +1,8 @@
-{% extends "base.html" %}
+{% extends "base.jinja" %}
 
 {% block content %}
 <section id="welcome-hero" class="welcome-hero">
-  <img
-    alt="image"
-    src="public/my/shiatsu-head.jpg"
-    class="home-background2"
-  />
+  <img alt="image" src="public/images/shiatsu-head.jpg" class="home-background2" />
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -52,14 +48,12 @@
             <br />
           </p>
         </div>
-        <div class="home-note1"><div class="home-point"></div></div>
+        <div class="home-note1">
+          <div class="home-point"></div>
+        </div>
       </div>
     </div>
-    <img
-      alt="image"
-      src="templates/images/shiatsu-background-1400w.jpg"
-      class="home-image image-notes"
-    />
+    <img alt="image" src="public/images/shiatsu-background-1400w.jpg" class="home-image image-notes" />
   </div>
   <div class="home-second">
     <div data-aos="fade-up-left" class="home-content1">
@@ -86,17 +80,11 @@
       <a class="button button-style-2 home-register2" href="contact.html">
         <span>Kontaktujte mě</span>
         <svg viewBox="0 0 1024 1024" class="home-icon12">
-          <path
-            d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-          ></path>
+          <path d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"></path>
         </svg>
       </a>
     </div>
-    <img
-      alt="image"
-      src="templates/images/shiatsu-background-1400w.jpg"
-      class="image-notes"
-    />
+    <img alt="image" src="public/images/shiatsu-background-1400w.jpg" class="image-notes" />
   </div>
 </section>
 <section class="home-quote">
@@ -111,7 +99,7 @@
         <br>
         <br />
         Vřele doporučuji vyzkoušet.</span>
-      </p>
+    </p>
     <div class="home-author">
       <div class="home-details">
         <span class="home-name">Milada Bouzidi</span>
@@ -119,11 +107,7 @@
       </div>
     </div>
   </div>
-  <img
-    alt="image"
-    src="public/quote-background.svg"
-    class="home-background2"
-  />
+  <img alt="image" src="public/quote-background.svg" class="home-background2" />
   <div class="home-background3">
     <h2 class="home-title">Recenze</h2>
   </div>
@@ -136,37 +120,19 @@
     <a class="button home-register3">
       <span>chci shiatsu</span>
       <svg viewBox="0 0 1024 1024" class="home-icon15">
-        <path
-          d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-        ></path>
+        <path d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"></path>
       </svg>
     </a>
   </div>
-  <img
-    alt="image"
-    src="public/trailer-background.svg"
-    class="home-image2"
-  />
+  <img alt="image" src="public/trailer-background.svg" class="home-image2" />
 </section>
 <section class="home-subscribe">
   <div class="home-main">
     <h2 class="home-header4">Kontaktujte mě!</h2>
     <div class="home-content4">
       <div class="home-inputs">
-        <input
-          type="text"
-          required=""
-          placeholder="Name *"
-          autocomplete="name"
-          class="home-textinput input"
-        />
-        <input
-          type="email"
-          required=""
-          placeholder="Email *"
-          autocomplete="email"
-          class="home-textinput1 input"
-        />
+        <input type="text" required="" placeholder="Name *" autocomplete="name" class="home-textinput input" />
+        <input type="email" required="" placeholder="Email *" autocomplete="email" class="home-textinput1 input" />
       </div>
       <span class="home-text44">
         By submitting, you agree to receive email communications from
@@ -182,5 +148,5 @@
     </div>
   </div>
 </section>
-      </main>
-      {% endblock %}
+</main>
+{% endblock %}
