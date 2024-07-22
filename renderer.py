@@ -13,3 +13,5 @@ for f in os.listdir(jinja_template_folder):
         # write the parsed template
         with open(f.replace(".jinja", ".html"), "w") as chap_page:
             chap_page.write(output_from_parsed_template)
+            print(f, end=", ")
+print()
