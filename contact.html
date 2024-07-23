@@ -18,10 +18,15 @@
         data-tag="font" />
     <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!--bootstrap.min.css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <style>
-        
+        {
+            # TODO move to some css file #
+        }
+
         body {
             min-height: 75rem;
             padding-top: 4rem;
@@ -53,44 +58,49 @@
         }
 
         /*header on shiatsu page*/
-            .header1-section {
-      position: relative;
-      background-image: url('public/images/shiatsu-head.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-    }
-        .header2-section {
-      position: relative;
-      background-image: url('public/images/tea-blue.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-    }
-    .header-text1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      text-align: center;
-    }
-    .header-text2 {
-      position: absolute;
-      top: 50%;
-      left: 27%;
-      transform: translateX(-50%);
-      color: white;
-      text-align: center;
-    }
-    .header-text h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
+        .header1-section {
+            position: relative;
+            background-image: url('public/images/shiatsu-head.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
 
-     .border-thick {
-      border-width: 4px !important; /* Adjust the value as needed */
-    }
+        .header2-section {
+            position: relative;
+            background-image: url('public/images/tea-blue.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+
+        .header-text1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .header-text2 {
+            position: absolute;
+            top: 50%;
+            left: 27%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+        }
+
+        .header-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .border-thick {
+            border-width: 4px !important;
+            /* Adjust the value as needed */
+        }
     </style>
 
 </head>
@@ -161,6 +171,12 @@
                                     Checked checkbox
                                 </label>
                             </div>
+                            <div class="container mt-5">
+                                <h5>will be a further explanation of form fields
+                                    <i id="info-icon" class="fas fa-question-circle" data-bs-toggle="popover"
+                                        data-bs-content="This is the text that appears when the icon is clicked."></i>
+                                </h5>
+                            </div>
                             <div class="form-group mb-2">
                                 <label for="message" class="mb-1">Váš text</label>
                                 <textarea class="form-control" id="message" rows="4" placeholder="Text"
@@ -178,23 +194,37 @@
     <script src="assets/js/bootstrap.bundle.min.js">
         integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin = "anonymous" ></script>
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for the icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Initialize popover
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                    return new bootstrap.Popover(popoverTriggerEl)
+                })
+            })
+    </script>
 </body>
 
-    
-    <footer class="footer bg-dark p-0">
-        <div class="text-center text-white">
-            <br />
-            <span>DOTEKEM.cz</span>
-            <br />
-            <span>Michaela Clark</span>
-            <br />
-            <span>723 277 132</span>
-            <br />
-            <span>IČ: 08268908</span>
-            <br />
-            <br />
-        </div>
-    </footer>
-    
+
+<footer class="footer bg-dark p-0">
+    <div class="text-center text-white">
+        <br />
+        <span>DOTEKEM.cz</span>
+        <br />
+        <span>Michaela Clark</span>
+        <br />
+        <span>723 277 132</span>
+        <br />
+        <span>IČ: 08268908</span>
+        <br />
+        <br />
+    </div>
+</footer>
+
 
 </html>
