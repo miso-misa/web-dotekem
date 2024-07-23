@@ -53,18 +53,33 @@
         }
 
         /*header on shiatsu page*/
-            .header-section {
+            .header1-section {
       position: relative;
       background-image: url('public/images/shiatsu-head.jpg');
       background-size: cover;
       background-position: center;
-      height: 300px; /* Adjust height as needed */
+      height: 300px;
     }
-    .header-text {
+        .header2-section {
+      position: relative;
+      background-image: url('public/images/tea-blue.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+    .header-text1 {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+    .header-text2 {
+      position: absolute;
+      top: 50%;
+      left: 27%;
+      transform: translateX(-50%);
       color: white;
       text-align: center;
     }
@@ -108,35 +123,59 @@
     </nav>
     <div id="content">
         
+<div class="container-fluid p-0">
+    <div class="header2-section">
+        <div class="header-text2">
+            <h1 class="text center mt-4 mb-3">O mně</h1>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-0">
+    <div class="row p-5">
+        <div class="col-md-6">
+            <img src="public/images/me.jpg" alt="Description of Image" class="img-fluid image-container">
+        </div>
+        <div class="col-md-6">
+            <p>Jmenuji se Michaela Clark</p>
+            <p>
+                Jsem od podstaty zvědavá a ta zvědavost mě vede ke zkoumání a propojování směrů, které spolu na první
+                pohled nesouvisí. Hlavně výtvarné umění a pohyb.</p>
+            <p>
+                K lásce k pohybu mě přivedlo aikido. Japonské bojové umění, které je trochu jiné než všechny ostatní, co
+                jsem zatím potkala. Být v kontaktu, najít společný směr a cestu, co vede do harmonie. Uvědomovat si svůj
+                vlastní střed, osu a dech.
+            </p>
+            <p>
+                Potom můžu být v kontaktu se světem a zároveň sama se sebou. A v tu chvíli se může dít shiatsu. Dotek,
+                co dává prostor pro uvolnění. Chvíle, kdy můžete vnímat sami sebe a najít pohodlí ve svém těle.
+            </p>
 
-<h1>About me</h1>
+            <p>
+                Ale to stejné nastavení se mi osvědčilo i pro malbu nebo čajovou cestu.
+            </p>
 
-	<p class="text-start text-break">Jmenuji se Michaela Clark
+            <p>
+                Hledám cestu, jak žít. V současnosti se aktivně věnuju čajování v Jedné básni, blues dance s Blues Dose
+                a shibari u Diany Very.
+            </p>
 
-Jsem od podstaty zvědavá a ta zvědavost mě vede ke zkoumání a propojování směrů, které spolu na první pohled nesouvisí. Hlavně výtvarné umění a pohyb.
+            <p>
+                Děkuju vám všem, které jsem měla tu čest potkat. Ukazujete mi různé stránky života a učíte mě…
+            </p>
 
-K lásce k pohybu mě přivedlo aikido. Japonské bojové umění, které je trochu jiné než všechny ostatní, co jsem zatím potkala. Být v kontaktu, najít společný směr a cestu, co vede do harmonie. Uvědomovat si svůj vlastní střed, osu a dech.
-
-Potom můžu být v kontaktu se světem a zároveň sama se sebou. A v tu chvíli se může dít shiatsu. Dotek, co dává prostor pro uvolnění. Chvíle, kdy můžete vnímat sami sebe a najít pohodlí ve svém těle.
-
-Ale to stejné nastavení se mi osvědčilo i pro malbu nebo čajovou cestu.
-
-Hledám cestu, jak žít. V současnosti se aktivně věnuju čajování v Jedné básni, blues dance s Blues Dose a shibari u Diany Very. 
-
-Děkuju vám všem, které jsem měla tu čest potkat. Ukazujete mi různé stránky života a učíte mě…
-
-Těším se i na vás, co jsem ještě nepotkala. Na společné (ne)obyčejné chvíle.</p>
-
-
+            <p>
+                Těším se i na vás, co jsem ještě nepotkala. Na společné (ne)obyčejné chvíle.</p>
+            </p>
+        </div>
+        
     </div>
     <script src="assets/js/bootstrap.bundle.min.js">
         integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin = "anonymous" ></script>
 </body>
 
-<div id="footer">
     
-    <footer class="footer bg-dark">
+    <footer class="footer bg-dark p-0">
         <div class="text-center text-white">
             <br />
             <span>DOTEKEM.cz</span>
@@ -151,6 +190,5 @@ Těším se i na vás, co jsem ještě nepotkala. Na společné (ne)obyčejné c
         </div>
     </footer>
     
-</div>
 
 </html>

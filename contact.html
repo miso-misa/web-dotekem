@@ -53,18 +53,33 @@
         }
 
         /*header on shiatsu page*/
-            .header-section {
+            .header1-section {
       position: relative;
       background-image: url('public/images/shiatsu-head.jpg');
       background-size: cover;
       background-position: center;
-      height: 300px; /* Adjust height as needed */
+      height: 300px;
     }
-    .header-text {
+        .header2-section {
+      position: relative;
+      background-image: url('public/images/tea-blue.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+    .header-text1 {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+    .header-text2 {
+      position: absolute;
+      top: 50%;
+      left: 27%;
+      transform: translateX(-50%);
       color: white;
       text-align: center;
     }
@@ -116,9 +131,8 @@ TODO: Add content here
         crossorigin = "anonymous" ></script>
 </body>
 
-<div id="footer">
     
-    <footer class="footer bg-dark">
+    <footer class="footer bg-dark p-0">
         <div class="text-center text-white">
             <br />
             <span>DOTEKEM.cz</span>
@@ -133,6 +147,5 @@ TODO: Add content here
         </div>
     </footer>
     
-</div>
 
 </html>
