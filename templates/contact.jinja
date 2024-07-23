@@ -1,5 +1,54 @@
 {% extends "base.jinja" %}
 
 {% block content %}
-TODO: Add content here
-{% endblock %}
+<div class="container-fluid p-0">
+    <div class="header2-section">
+        <div class="header-text2">
+            <h1 class="text center mt-4 mb-3">O mně</h1>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-0">
+    <div class="row p-5">
+        <div class="col-md-4">
+            <p>Moje vizitka</p>
+        </div>
+        <div class="col-md-8">
+            <div class="container-fluid p-5">
+                <div class="card border-secondary border-thick p-3">
+                    <div class="card-body">
+                        <h5 class="card-title mt-3 mb-0">Chcete si domluvit setkání? Napište mi!</h5>
+                        <form class="p-3">
+                            <div class="form-group mb-2">
+                                <label for="name" class="mb-1">Jméno</label>
+                                <input type="text" class="form-control" id="name" placeholder="Vaše jméno" required>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email" class="mb-1">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="message" class="mb-1">Váš text</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Text"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary m-1">Odeslat</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
