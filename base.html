@@ -101,6 +101,16 @@
             border-width: 4px !important;
             /* Adjust the value as needed */
         }
+
+        .btn-round {
+      border-radius: 50%;  /* Makes the button round */
+      width: 25px;         /* Sets a fixed width */
+      height: 25px;        /* Sets a fixed height */
+      display: flex;       /* Centers the content */
+      align-items: center; /* Centers the content vertically */
+      justify-content: center; /* Centers the content horizontally */
+      padding: 0;          /* Removes any default padding */
+    }
     </style>
 
 </head>
@@ -138,20 +148,10 @@
     <script src="assets/js/bootstrap.bundle.min.js">
         integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin = "anonymous" ></script>
-    <!-- Bootstrap 5 JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Font Awesome for the icon -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Initialize popover
-                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-                    return new bootstrap.Popover(popoverTriggerEl)
-                })
-            })
-    </script>
+    <script>var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })</script>
 </body>
 
 

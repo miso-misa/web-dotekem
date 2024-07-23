@@ -27,28 +27,110 @@
                                 <label for="email" class="mb-1">Email</label>
                                 <input type="email" class="form-control" id="email" placeholder="Email" required>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Default checkbox
-                                </label>
+                            <div class="form-group row mt-4 mb-2">
+                                <label class="d-flex inline-block mb-1 col">Máte místo?</label>
+                                <div class="col d-flex justify-content-start">
+                                    <button type="button" class="btn btn-info btn-sm btn-round" data-bs-container="body"
+                                        data-bs-toggle="popover" data-bs-placement="right"
+                                        data-bs-content="Pokud nemáte místo u sebe doma, nebo jinde, můžu místo zařídit (pronajmout masérnu).">?
+                                    </button>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            ano
+                                        </label>
+                                    </div>
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            ne
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Checked checkbox
-                                </label>
+                            <div class="form-group mt-3 mb-3">
+                                <label class="mb-1">Které dny v týdnu preferujete?</label>
+                                <div class="row">
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Po
+                                        </label>
+                                    </div>
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Út
+                                        </label>
+                                    </div>
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            St
+                                        </label>
+                                    </div>
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Čt
+                                        </label>
+                                    </div>
+                                    <div class="form-check col">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Pá
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3 mb-4">
+                                    <label class="mb-1">Kdy máte obvykle čas?</label>
+                                    <div class="row">
+                                        <div class="form-check col">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                ráno
+                                            </label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                dopoledne
+                                            </label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                odpoledne
+                                            </label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                večer
+                                            </label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                kdykoliv
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="container mt-5">
-                                <h5>will be a further explanation of form fields
-                                    <i id="info-icon" class="fas fa-question-circle" data-bs-toggle="popover"
-                                        data-bs-content="This is the text that appears when the icon is clicked."></i>
-                                </h5>
-                            </div>
-                            <div class="form-group mb-2">
-                                <label for="message" class="mb-1">Váš text</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="Text"
-                                    required></textarea>
+                            <div class="form-group mt-3 mb-2">
+                                <label for="message" class="col mb-1">Zpráva od vás pro mě</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Tady můžete cokoliv upřesnit..." required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary m-1">Odeslat</button>
                         </form>
