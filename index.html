@@ -72,6 +72,10 @@
       font-size: 3rem;
       margin-bottom: 20px;
     }
+
+     .border-thick {
+      border-width: 4px !important; /* Adjust the value as needed */
+    }
     </style>
 
 </head>
@@ -187,10 +191,10 @@
         <div class="card">
           <div class="card-body">
             <p>
-                Masáž od Míši je jemná a příjemná a někdy v průběhu i usnu...
-                Hned po masáži se cítím uvolněná a dozvuky vší té péče, které se mi dostalo, cítím v několika
-                následujících dnech.
-                Vřele doporučuji vyzkoušet.
+              Masáž od Míši je jemná a příjemná a někdy v průběhu i usnu...
+              Hned po masáži se cítím uvolněná a dozvuky vší té péče, které se mi dostalo, cítím v několika
+              následujících dnech.
+              Vřele doporučuji vyzkoušet.
             </p>
             <h5 class="card-title">Milada Bouzidi</h5>
             <p>(Freelance lektorka Aj)</span>
@@ -203,7 +207,7 @@
             <form>
               <div class="form-group p-2">
                 <label for="inputText">Napsat recenzi</label>
-                <input type="text" class="form-control mt-4 mb-3" id="inputText" placeholder="Enter some text">
+                <input type="text" class="form-control mt-4 mb-3" id="inputText" placeholder="text">
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -212,25 +216,34 @@
       </div>
     </div>
   </div>
-  <div class="row bg-dark text-white text-center p-3 w-auto">
+  <div class="row bg-dark text-white text-center p-3">
     <h2 class="mt-3 mb-3">Něco inspirativního</h2>
     <p>To bych potřebovala taky...</p>
   </div>
-  <div class="container mt-5">
-    <div class="card">
+  <div class="row bg-light p-5">
+    <h2 class="text-center mt-3 mb-3">Shiatsu jako dárek</h2>
+    <p>Obálka s dárkovým poukazem udělá radost partnerům, rodičům i přátelům. Od doby koupení budou mít obdarovaní půl
+      roku na to si domluvit termín.
+    </p>
+    <div class="container d-flex justify-content-center">
+      <img alt="image" src="public/images/shiatsu-poukaz.jpg" class="w-75" />
+    </div>
+  </div>
+  <div class="container-fluid p-5">
+    <div class="card border-warning border-thick p-3">
       <div class="card-body">
-        <h5 class="card-title mt-3 mb-0">Mate jakekoliv otazky? Napiste mi!</h5>
+        <h5 class="card-title mt-3 mb-0">Máte jakékoliv otázky? Napište mi!</h5>
         <form class="p-3">
           <div class="form-group mb-2">
-            <label for="name" class="mb-1">Jmeno</label>
-            <input type="text" class="form-control" id="name" placeholder="Vase jmeno" required>
+            <label for="name" class="mb-1">Jméno</label>
+            <input type="text" class="form-control" id="name" placeholder="Vaše jméno" required>
           </div>
           <div class="form-group mb-2">
             <label for="email" class="mb-1">Email</label>
             <input type="email" class="form-control" id="email" placeholder="Email" required>
           </div>
           <div class="form-group mb-2">
-            <label for="message" class="mb-1">Vas text</label>
+            <label for="message" class="mb-1">Váš text</label>
             <textarea class="form-control" id="message" rows="4" placeholder="Text" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary m-1">Odeslat</button>
