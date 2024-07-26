@@ -58,7 +58,7 @@
             margin-bottom: 20px;
         }
 
-        .background-container3::before {
+        .background-container-shiatsu1::before {
             content: "";
             position: absolute;
             top: 0;
@@ -68,12 +68,38 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
 
-        .background-container3 {
+        .background-container-shiatsu1 {
             position: relative;
             background-image: url('public/images/tea-red.jpg');
             background-size: cover;
             background-position: center;
             height: auto;
+        }
+
+        .background-container-shiatsu2 {
+            position: relative;
+            background-image: url('public/images/background-black-middle.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+        }
+
+        .background-container-footer {
+            position: bottom;
+            background-image: url('public/images/background-black-bottom.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
 
@@ -277,8 +303,14 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid p-0">
+    <img src="public/images/line-fullwidth.svg" alt="pagebreaker">
+  </div>
   <div class="row mt-3 p-3">
-    <h1 class="text-center mt-4 mb-3">Recenze</h1>
+    <h1 class="text-center mt-4">Recenze</h1>
+    <div class="container-fluid text-center">
+    <img src="public/images/line-wide.svg" height="30" alt="underline">
+  </div>
     <div class="container col-md-6 mt-5">
       <div class="card">
         <div class="card-body">
@@ -308,9 +340,11 @@
     </div>
   </div>
 </div>
-<div class="row bg-dark text-white text-center p-3">
-  <h2 class="mt-3 mb-3">Něco inspirativního</h2>
-  <p>To bych potřebovala taky...</p>
+<div class="background-container-shiatsu2">
+  <div class="container-fluid text-white text-center p-5">
+    <h2 class="mt-3 mb-3">Něco inspirativního</h2>
+    <p>To bych potřebovala taky...</p>
+  </div>
 </div>
 <div class="row bg-light p-5">
   <h2 class="text-center mt-3 mb-3">Shiatsu jako dárek</h2>
@@ -356,7 +390,7 @@
 </body>
 
 
-<footer class="footer bg-dark p-0">
+<footer class="footer background-container-footer p-0">
     <div class="text-center text-white">
         <br />
         <span>DOTEKEM.cz</span>
