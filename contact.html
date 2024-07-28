@@ -48,6 +48,10 @@
             transform: translate(-50%, -50%);
         }
 
+        div {
+            font-family: 'Poppins';
+        }
+
         h1 {
             font-size: 3rem;
             font-family: 'Poppins';
@@ -66,31 +70,45 @@
             font-family: 'Poppins';
         }
 
+        footer {
+            font-family: 'Poppins';
+        }
+
         .btn {
             font-family: 'Poppins';
         }
 
-
-        .btn-pretty {
-
+        .btn-send {
             display: inline-block;
             outline: none;
             cursor: pointer;
             font-weight: 600;
             border-radius: 3px;
             padding: 12px 24px;
-            border: 0;
             color: #fff;
-            background: #592665;
-            line-height: 1.15;
+            background-image: url('public/images/button-bg.svg');
+            background-size: contain;
+            background-position: center;
+            line-height: 1.5;
             font-size: 16px;
         }
 
-        .btn-pretty :hover {
-            transition: all .1s ease;
-            box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 
-
+        .btn-pretty {
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 3px;
+            padding: 12px 24px;
+            color: #fff;
+            background-image: url('public/images/button-bg-long.svg');
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            background-repeat: no-repeat;
+            line-height: 1.5;
+            font-size: 16px;
         }
 
         .background-container {
@@ -162,7 +180,7 @@
         /*header on other pages*/
         .header-section {
             position: relative;
-            background-image: url('public/images/bg-purple-mountains.svg');
+            background-image: url('public/images/background-purple.svg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -234,12 +252,12 @@
     </div>
 </div>
 <div class="container-fluid p-0">
-    <div class="row p-5">
-        <div class="col md-4">
+    <div class="row p-5 justify-content-center">
+        <div class="col-md-4 justify-content-center">
             <div class="container-fluid pb-5">
-                <div class="card border-dark border-thick">
+                <div class="card border-dark">
                     <div class="card-body row d-flex align-items-center">
-                        <div class="col">
+                        <div class="col d-flex">
                             <img src="public/images/Logo-dotekem.png" alt="logo" class="w-auto">
                         </div>
                         <div class="col">
@@ -251,7 +269,7 @@
                 </div>
             </div>
         </div>
-        <div class="col md-8">
+        <div class="col-md-8">
             <div class="container-fluid">
                 <div class="card border-dark border-thick p-3">
                     <div class="card-body">
@@ -370,7 +388,7 @@
                                 <textarea class="form-control" id="message" rows="4"
                                     placeholder="Tady můžete cokoliv upřesnit..." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-pretty m-1">Odeslat</button>
+                            <button type="submit" class="btn btn-send m-1">Odeslat</button>
                         </form>
                     </div>
                 </div>
