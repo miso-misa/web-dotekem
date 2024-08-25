@@ -114,7 +114,7 @@
         .background-container {
             position: relative;
             background-image: url('public/images/shiatsu-head.jpg');
-            background-size: cover;
+            background-size:cover;
             background-position: center;
             height: 500px;
             color: white;
@@ -218,7 +218,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" id="navbar-menu" href="{{homepage}}">
+            <a class="navbar-brand" id="navbar-menu" href="index.html">
                 <img src="public/images/logo-dotekem-w.svg" width="40" alt="logo" class="navbar-logo svg-icon me-2">
                 DOTEKEM
             </a>
@@ -228,21 +228,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    {% for page_html, page_title in nav_bar.items() %}
-                    <li class="nav-item"><a class="nav-link{% if active_page == page_html %} active{% endif %}"
-                            href="{{ page_html }}">{{ page_title }}</a></li>
-                    {% endfor %}
+                    <li class="nav-item"><a class="nav-link{% if active_page == 'index' %} active{% endif %}"
+                            aria-current="page" href="index.html">Domů</a></li>
+                    <li class="nav-item"><a class="nav-link{% if active_page == 'shiatsu' %} active{% endif %}"
+                            href="shiatsu.html">Shiatsu</a></li>
+                    <li class="nav-item"><a class="nav-link{% if active_page == 'about-me' %} active{% endif %}"
+                            href="about-me.html">O mně</a></li>
+                    <li class="nav-item"><a class="nav-link{% if active_page == 'contact' %} active{% endif %}"
+                            href="contact.html">Kontakt</a></li>
                 </ul>
             </div>
-
-            <a href="{{homepage}}" class="btn btn-dark btn-round text-white"
-                style="position: absolute; top: 10px; right: 10px;">
-                {% if lang == 'cz' %}
-                change to english
-                {% else %}
-                změnit na češtinu
-                {% endif %}
-            </a>
         </div>
     </nav>
     <div id="content">
