@@ -216,9 +216,10 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" id="navbar-menu" href="{{homepage}}">
+            <a class="navbar-brand" id="navbar-menu" href="en_index.html">
                 <img src="public/images/logo-dotekem-w.svg" width="40" alt="logo" class="navbar-logo svg-icon me-2">
                 DOTEKEM
             </a>
@@ -228,26 +229,185 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    {% for page_html, page_title in nav_bar.items() %}
-                    <li class="nav-item"><a class="nav-link{% if active_page == page_html %} active{% endif %}"
-                            href="{{ page_html }}">{{ page_title }}</a></li>
-                    {% endfor %}
+                    
+                    <li class="nav-item"><a class="nav-link active"
+                            href="en_index.html">Home</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link"
+                            href="en_shiatsu.html">Shiatsu</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link"
+                            href="en_about-me.html">About me</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link"
+                            href="en_contact.html">Contact</a></li>
+                    
                 </ul>
             </div>
 
-            <a href="{{homepage}}" class="btn btn-dark btn-round text-white"
+            <a href="en_index.html" class="btn btn-dark btn-round text-white"
                 style="position: absolute; top: 10px; right: 10px;">
-                {% if lang == 'cz' %}
-                change to english
-                {% else %}
+                
                 změnit na češtinu
-                {% endif %}
+                
             </a>
         </div>
     </nav>
     <div id="content">
-        {% block content %}
-        {% endblock %}
+        
+<div class="row p-0">
+  <div class="background-container">
+    <div class="content">
+      <h1 class="text-uppercase"> Dotekem <br> do přítomnosti </h1>
+      <p class="text start">něco o pozornosti, soustředění a jednoduchosti…
+        <br />
+        všechno je umění,
+        když se k tomu tak přistupuje.
+        <br />
+        Co dělám? pomáhám soustřeďovat
+        pozornost.
+      </p>
+      <a href="contact.html" class="btn btn-pretty sm-mt-4">chci přijít na
+        shiatsu</a>
+    </div>
+  </div>
+</div>
+
+<div class="container p-0">
+  <div class="row justify-content-center pt-5 ps-5 pe-5">
+    <div class="col-md-6 align-self-center">
+      <h2 class="mt-4 mb-3">Shiatsu</h2>
+      <p class="fst-italic mb-2">Jemně, s respektem a plnou pozorností.</p>
+      <p class="mb-2">
+        Tak přistupuji k shiatsu a ke každému z vás, kdo za mnou
+        přicházíte.
+      </p>
+      <p class="mb-2">
+        Ať už potřebujete uvolnit ztuhlá záda, uklidnit mysl nebo
+        vrátit k sobě.
+      </p>
+      <p class="mb-2">
+        Dotek jako způsob práce s různými vrstvami bytí.
+      </p>
+      <a href="shiatsu.html" class="btn btn-pretty">více o shiatsu</a>
+    </div>
+    <div class="col-md-6">
+      <div class="container">
+        <img alt="image" src="public/images/shiatsu-lotus.jpg" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center pb-5 ps-5 pe-5">
+    <div class="col-md-6">
+      <div class="container d-none d-md-block">
+        <img alt="image" src="public/images/shiatsu-hands.jpg" class="img-fluid" />
+      </div>
+    </div>
+    <div class="col-md-6 align-self-center">
+      <div class="p-3">
+        <h2 class="mt-4 mb-3">Pro firmy</h2>
+        <p class="fst-italic mb-2">
+          Chcete svým zaměstnancům dopřát neobvyklý benefit?
+        </p>
+        <p class="mb-2">
+          Japonská shiatsu masáž je na to ideální.
+        </p>
+        <p class="mb-2">
+          Jako klient zůstáváte
+          oblečení od hlavy až po ponožky.
+        </p>
+        <p class="mb-2">
+          Jako firma jediné, co
+          potřebujete zařídit, je prostor.
+        </p>
+        <p class="mb-2">
+          Místnost s volným prostorem
+          na podlaze 2x2,5m a příjemnou pokojovou teplotou.
+        </p>
+        <p class="mb-2">
+          Vše ostatní
+          potřebné si dovezu.
+        </p>
+        <a href="shiatsu.html#companies" class="btn btn-pretty">více informací</a>
+      </div>
+    </div>
+  </div>
+  <div class="row p-0">
+    <img src="public/images/line-wide.svg" alt="pagebreaker">
+  </div>
+  <div class="row mt-3 p-3">
+    <h1 class="text-center mt-4">Recenze</h1>
+    <div class="container-fluid text-center">
+      <img src="public/images/line-wide.svg" height="35" alt="underline">
+    </div>
+    <div class="container col-md-6 mt-5">
+      <div class="card">
+        <div class="card-body">
+          <p>
+            Masáž od Míši je jemná a příjemná a někdy v průběhu i usnu...
+            Hned po masáži se cítím uvolněná a dozvuky vší té péče, které se mi dostalo, cítím v několika
+            následujících dnech.
+            Vřele doporučuji vyzkoušet.
+          </p>
+          <h5 class="card-title">Milada Bouzidi</h5>
+          <p>(Freelance lektorka Aj)</span>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6 mt-5">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="form-group p-2">
+              <label for="inputText">Napsat recenzi</label>
+              <input type="text" class="form-control mt-4 mb-3" id="inputText" placeholder="text">
+            </div>
+            <button type="submit" class="btn btn-send">Odeslat</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="background-container-shiatsu2">
+  <div class="container-fluid text-white text-center p-5">
+    <h2 class="mt-3 mb-3">Něco inspirativního</h2>
+    <p>To bych potřebovala taky...</p>
+  </div>
+</div>
+<div class="row p-5">
+  <h2 class="text-center mt-3 mb-3">Shiatsu jako dárek</h2>
+  <p>Obálka s dárkovým poukazem udělá radost partnerům, rodičům i přátelům. Od doby koupení budou mít obdarovaní půl
+    roku na to si domluvit termín.
+  </p>
+  <div class="container d-flex justify-content-center">
+    <img alt="image" src="public/images/shiatsu-poukaz.jpg" class="w-75" />
+  </div>
+</div>
+<div class="container-fluid p-5">
+  <div class="card border p-5">
+    <div class="card-body">
+      <h5 class="card-title mt-3 mb-0">Máte jakékoliv otázky? Napište mi!</h5>
+      <form class="p-3">
+        <div class="form-group mb-2">
+          <label for="name" class="mb-1">Jméno</label>
+          <input type="text" class="form-control" id="name" placeholder="Vaše jméno" required>
+        </div>
+        <div class="form-group mb-2">
+          <label for="email" class="mb-1">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group mb-2">
+          <label for="message" class="mb-1">Váš text</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Text" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-send m-1">Odeslat</button>
+      </form>
+    </div>
+  </div>
+</div>
+</main>
+
     </div>
     <script src="assets/js/bootstrap.bundle.min.js">
         integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -258,7 +418,7 @@
         })</script>
 </body>
 
-{% block footer %}
+
 <footer class="footer background-container-footer p-0">
     <div class="text-center text-white">
         <br />
@@ -273,6 +433,6 @@
         <br />
     </div>
 </footer>
-{% endblock %}
+
 
 </html>
