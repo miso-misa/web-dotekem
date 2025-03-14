@@ -119,6 +119,15 @@ footer {
   padding: 11rem 5rem 12rem 5rem !important;
 }
 
+.background-container-shiatsu3 {
+  position: relative;
+  background-image: url('../../public/images/background-green-middle.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 11rem 5rem 12rem 5rem !important;
+}
+
 .background-container-footer {
   position: bottom;
   background-image: url('../../public/images/background-black-bottom.svg');
