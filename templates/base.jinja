@@ -45,19 +45,16 @@
                     {% for page_html, page_title in nav_bar.items() %}
                     <li class="nav-item"><a class="nav-link{% if active_page == page_html %} active{% endif %}"
                             href="{{ page_html }}">{{ page_title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-
-            <a href="{{ other_page }}" class="btn btn-dark btn-round text-white"
-                style="position: absolute; top: 10px; right: 10px;">
-                {% if lang == 'cz' %}
+                    <li class="nav-item"><a class="nav-link btn-language text-white"
+                      href="{{ other_page }}">
+                      {% if lang == 'cz' %}
                 EN
                 {% else %}
                 CZ
-                {% endif %}
-            </a>
-        </div>
+                {% endif %}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
     </nav>
     <div id="content">
         {% block content %}
