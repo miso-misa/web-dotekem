@@ -20,8 +20,8 @@ nav_bar = {
 }
 
 pages = {
-    "cz" : ["index", "shiatsu", "about-me", "contact"],
-    "en" : ["en_index", "en_shiatsu", "en_about-me", "en_contact"],
+    "cz" : ["index", "shiatsu", "about-me", "contact", "GDPR",],
+    "en" : ["en_index", "en_shiatsu", "en_about-me", "en_contact", "en_GDPR",],
 }
 
 homepage = {
@@ -29,17 +29,33 @@ homepage = {
     "en" : "en_index.html",
 }
 
+gdpr = {
+    "cz" : "GDPR.html",
+    "en" : "en_GDPR.html",
+}
+
+def render_page(page, lang):
+    template = env.get_template(page + ".jinja")
+    if lang == "cz":
+        other_page = "en_" + page
+    else:
+        other_page = page.replace("en_","")
+    kwargs = {
+        "nav_bar" : nav_bar[lang],
+        "lang" : lang,
+        "active_page" : page+".html",
+        "homepage" : homepage[lang],
+        "other_page" : other_page+".html",
+        "gdpr" : gdpr[lang],
+    }
+    output_from_parsed_template = template.render(**kwargs)
+    with open(page + ".html", "w") as chap_page:
+        chap_page.write(output_from_parsed_template)
+        print(page, end=", ")
+
 for lang in ["cz", "en"]:
     for page in pages[lang]:
-        template = env.get_template(page + ".jinja")
-        if lang == "cz":
-            other_page = "en_" + page
-        else:
-            other_page = page.replace("en_","")
-        output_from_parsed_template = template.render(nav_bar=nav_bar[lang], lang=lang, active_page=page+".html", homepage=homepage[lang], other_page=other_page+".html")
-        with open(page + ".html", "w") as chap_page:
-            chap_page.write(output_from_parsed_template)
-            print(page, end=", ")
+       render_page(page, lang) 
 print()
 
 
