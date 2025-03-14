@@ -21,7 +21,7 @@ div {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Poppins';
   margin-top: 3rem;
   margin-bottom: 20px;
@@ -122,10 +122,10 @@ footer {
 .background-container-shiatsu3 {
   position: relative;
   background-image: url('../../public/images/background-green-middle.svg');
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 11rem 5rem 12rem 5rem !important;
+  padding: 7rem 5rem 6rem 5rem !important;
 }
 
 .background-container-footer {
